@@ -9,7 +9,7 @@ const Straftijd = () => {
 
         if (timerOn){
             interval = setInterval(()=>{
-                console.log(time)
+                // console.log(time)
             if(time === 1000){
                 clearInterval(interval);
                 setTimerOn(false);

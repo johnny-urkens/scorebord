@@ -1,39 +1,7 @@
 
-// import React , { Component } from 'react';
-// import Klok from './Klok';
-// import Countdown from './Countdown';
-// import Score from './Score';
-// import TimeOut from './TimeOut';
-
-
-// class App extends Component {
-  
-//   render() {
-//     return (
-//       <div className="App container mx-auto mt-3 font-normal">
-//         {/* <div className="text-5xl text-red-700">Scorebord</div> */}
-//         <div >
-//         <div className="text-center">
-//         <Score/>
-//         </div>
-//         <div className="text-center" >
-//         <TimeOut />
-//         </div>
-//     <div className="float-right mr-10"><Countdown /></div>
-//     <div className="float-left ml-10"><Countdown /></div>
-//         </div>
-        
-//       </div>
-    
-//     );
-//   }
-// }
-
-
-
-// export default App;
 import React, {useState} from 'react'
 import Klok from './Klok';
+
 import Score from './Score';
 import Straftijd from './Straftijd';
 
@@ -70,18 +38,23 @@ const App = () => {
   }else{
   return (
     <div className="App container mx-auto mt-3 font-normal">
+                   <div>
+             
+            </div>
              {/* <div className="text-5xl text-red-700">Scorebord</div> */}
              <div >
              <div className="text-center">
              <Score/>
              </div>
+            
              <div className="text-center" >
              <Klok time={speeltijd} />
              </div>
          <div className="float-right mr-10"><Straftijd /></div>
          <div className="float-left ml-10"><Straftijd /></div>
              </div>
-            
+             <br/>
+
     </div>
   )}
 }
