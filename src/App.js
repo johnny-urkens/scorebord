@@ -5,6 +5,7 @@ import Klok from './Klok';
 import Score from './Score';
 import Straftijd from './Straftijd';
 
+
 const App = () => {
 
   const [speeltijd, setSpeeltijd] = useState(0)

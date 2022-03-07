@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaCheck } from 'react-icons/fa'
 
 const Home = () => {
     const [name, setName] = useState('');
@@ -11,11 +12,12 @@ if(isSet === true){
     )
 }
   return (
-    <div>
+    
+    <div className="mb-2">
    <form>
    <label>team:</label>
-    <input value={name} placeholder="  vul in aub" onInput={e => setName(e.target.value)} className="border-2"/>
-    <button type="submit" onClick={()=> setIsSet(true)} className=" bg-gray-300 rounded text-white m-1 py-2 px-4 font-bold">Submit</button>
+    <input value={name} placeholder="  vul in aub"  onInput={e => setName(e.target.value)} className="border-2"/>
+    <button type="submit" onClick={()=> setIsSet(true)} className=" bg-green-500 rounded text-white m-1 py-2 px-4 font-bold"><FaCheck/></button>
    </form>
     </div>
   )

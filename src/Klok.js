@@ -3,6 +3,8 @@ import TimeOut from './TimeOut';
 import useSound from "use-sound";
 import sound from './sound/Scoreboard-horn.mp3'
 
+
+
 const Klok = (props) => {
  
     const[play] = useSound(sound);
@@ -49,9 +51,10 @@ const Klok = (props) => {
     
   return (
     <div>       
-        <div className="text-3xl text-red-800">Timer</div>
+        <div className="text-3xl text-red-800">Timer </div>
         <div className="text-9xl">
-            {minutes} : {seconds} 
+       
+             {minutes} : {seconds} 
         </div>
         {!timerOn && time === 0 && (
           <button onClick={() => setTimerOn(true)} className=" bg-green-800 rounded text-white m-1 py-0 px-1 font-bold">Start</button>
