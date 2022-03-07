@@ -26,7 +26,7 @@ const Straftijd = () => {
   return (
    <div> 
         <div >Straftijd</div>
-        <div className="text-2xl">
+        <div className="text-3xl">
             {minutes} : {seconds} 
         </div>
         {!timerOn && time === 120000 && (

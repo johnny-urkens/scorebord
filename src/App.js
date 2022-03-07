@@ -10,7 +10,7 @@ const App = () => {
   const [speeltijd, setSpeeltijd] = useState(0)
   const [keuze, setKeuze] = useState(false)
   const vijftien = ()=>{
-    setSpeeltijd(1);
+    setSpeeltijd(15);
     setKeuze(true);
   }
   const vijfentwintig = ()=>{

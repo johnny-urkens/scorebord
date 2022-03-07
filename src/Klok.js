@@ -61,9 +61,9 @@ const Klok = (props) => {
           <button onClick={() => setTime(0)} className=" bg-red-800 rounded text-white m-1 py-0 px-1 font-bold float-left">Reset</button>
         )}
         {!timerOn && time > 0 && (
-          <button onClick={() => setTimerOn(true)} className=" bg-green-800 rounded text-white m-1 py-0 px-1 font-bold">Resume</button>
+          <button onClick={() => setTimerOn(true)} className=" bg-green-800 rounded text-white m-1 py-0 px-1 font-bold">Hervatten</button>
         )}
-        {time !== 0 && <button onClick={play} className=" bg-orange-600 rounded text-white m-1 py-0 px-1 font-bold">toeter</button>}
+        {time !== 0 && <button onClick={play} className=" bg-orange-600 rounded text-white m-1 py-0 px-1 font-bold">Toeter</button>}
         {timerOn && <button onClick={()=> startTimeOut()} className=" bg-orange-400 rounded text-white m-1 ml-10 py-0s px-1 font-bold">TimeOut</button>}
         
         

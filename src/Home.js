@@ -14,7 +14,7 @@ if(isSet === true){
     <div>
    <form>
    <label>team:</label>
-    <input value={name} placeholder="  vul in aub" onInput={e => setName(e.target.value)}/>
+    <input value={name} placeholder="  vul in aub" onInput={e => setName(e.target.value)} className="border-2"/>
     <button type="submit" onClick={()=> setIsSet(true)} className=" bg-gray-300 rounded text-white m-1 py-2 px-4 font-bold">Submit</button>
    </form>
     </div>
